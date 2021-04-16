@@ -1,1 +1,11 @@
 /* YOUR CODE HERE */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#pictures-container{
+    background-color: #666;
+    height: 203px;
+    width: 100%;
+}
