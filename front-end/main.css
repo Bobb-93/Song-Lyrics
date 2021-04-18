@@ -4,19 +4,38 @@
     padding: 0;
 }
 
-#pictures-container{
+html, body{
+    overflow-x:hidden;
+
+}
+
+pre{
+    padding-top: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    color: #6E008C;
+    background-color: #CCC;
+    width: 100vw;
+    min-height: calc(100vh - 170px);
+}
+
+/* .lyrics-container{
+    min-height: 100vh;
+} */
+
+.pictures-container{
     background-color: #666;
     height: 150px;
     width: 150%;
 }
 
-#pictures-container img{
+.pictures-container img{
     height: 150px;
     width: 150px;
     margin-right: 1em;
     cursor: pointer;
 }
 
-#pictures-container img:first-child{
+.pictures-container img:first-child{
     margin-left: 20%;
 }

@@ -1,13 +1,13 @@
 // YOUR CODE HERE
 const pictures = {
-    picture1: document.querySelector("#pictures-container>img[data-id='1']"),
-    picture2: document.querySelector("#pictures-container>img[data-id='2']"),
-    picture3: document.querySelector("#pictures-container>img[data-id='3']")
+    picture1: document.querySelector(".pictures-container>img[data-id='1']"),
+    picture2: document.querySelector(".pictures-container>img[data-id='2']"),
+    picture3: document.querySelector(".pictures-container>img[data-id='3']")
 };
 
 const output = {
-    songTitle: document.getElementById("song-title"),
-    songTitle: document.getElementById("song-lyrics"),
+    // songTitle: document.getElementById("song-title"),
+    songTitle: document.getElementsByClassName("song-lyrics")[0],
 }
 
 console.log(pictures.picture1);
