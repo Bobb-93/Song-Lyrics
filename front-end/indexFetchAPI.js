@@ -19,16 +19,16 @@ const pictures = {
 
 const output = {
     // songTitle: document.getElementById("song-title"),
-    songLyrics: document.getElementsByClassName("song-lyrics")[0],
-}
+    songLyrics: document.getElementsByClassName("song-lyrics")[0]
+};
 
 let lyricsURL = "";
 
-// console.log(pictures);
 for (const picture in pictures) { 
     // console.log(`${picture}: ${pictures[picture]}`);
 
     pictures[picture].selector.addEventListener("click", function(){
+        
         /*
         let xhttp = new XMLHttpRequest();
         // console.log(chosenPicture);
@@ -41,6 +41,7 @@ for (const picture in pictures) {
         };
         xhttp.send();
         */
+       
        fetch(pictures[picture].relativePath)
        .then(
            response => response.text()
@@ -50,19 +51,3 @@ for (const picture in pictures) {
         )
     });
 }
-
-//Междинен вариант, но с повторения:
-// pictures.picture1.addEventListener('click', function(){
-//     lyricsURL = "../back-end/lyrics/charlotte_sometimes.txt";
-//     loadLyrics(lyricsURL);
-// });
-
-// pictures.picture2.addEventListener('click', function(){
-//     lyricsURL = "../back-end/lyrics/hey_you.txt";
-//     loadLyrics(lyricsURL);
-// });
-
-// pictures.picture3.addEventListener('click', function(){
-//     lyricsURL = "../back-end/lyrics/pictures_of_you.txt";
-//     loadLyrics(lyricsURL);
-// });
