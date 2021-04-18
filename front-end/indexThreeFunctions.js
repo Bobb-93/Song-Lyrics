@@ -7,7 +7,7 @@ const pictures = {
 
 const output = {
     // songTitle: document.getElementById("song-title"),
-    songTitle: document.getElementsByClassName("song-lyrics")[0],
+    songLyrics: document.getElementsByClassName("song-lyrics")[0]
 }
 
 console.log(pictures.picture1);
@@ -19,7 +19,7 @@ function loadLyrics1() {
 
     xhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
-            output.songTitle.innerHTML = this.responseText;
+            output.songLyrics.innerHTML = this.responseText;
         }
     };
     xhttp.send();
@@ -36,7 +36,7 @@ function loadLyrics2() {
 
     xhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
-            output.songTitle.innerHTML = this.responseText;
+            output.songLyrics.innerHTML = this.responseText;
         }
     };
     xhttp.send();
@@ -53,7 +53,7 @@ function loadLyrics3() {
 
     xhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
-            output.songTitle.innerHTML = this.responseText;
+            output.songLyrics.innerHTML = this.responseText;
         }
     };
     xhttp.send();
