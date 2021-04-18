@@ -27,21 +27,7 @@ let lyricsURL = "";
 for (const picture in pictures) { 
     // console.log(`${picture}: ${pictures[picture]}`);
 
-    pictures[picture].selector.addEventListener("click", function(){
-        
-        /*
-        let xhttp = new XMLHttpRequest();
-        // console.log(chosenPicture);
-        xhttp.open("GET", pictures[picture].relativePath);
-
-        xhttp.onreadystatechange = function() {
-            if (this.readyState === 4 && this.status === 200) {
-                output.songLyrics.innerHTML = this.responseText;
-            }
-        };
-        xhttp.send();
-        */
-       
+    pictures[picture].selector.addEventListener("click", function(){       
        fetch(pictures[picture].relativePath)
        .then(
            response => response.text()
